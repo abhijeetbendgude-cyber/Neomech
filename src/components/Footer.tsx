@@ -4,8 +4,9 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-cover bg-center bg-no-repeat bg-[url('https://www.shutterstock.com/image-photo/petrochemical-plant-industrial-equipment-by-600nw-2466848557.jpg')] bg-blue-900 text-white relative">
+      <div className="absolute inset-0 bg-blue-900/70"></div>
+      <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <h3 className="text-xl font-bold mb-4">Neomech</h3>

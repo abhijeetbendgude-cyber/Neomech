@@ -41,7 +41,7 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.pexels.com/photos/8941647/pexels-photo-8941647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                  src="https://www.news-medical.net/image-handler/ts/20240508064833/ri/750/src/images/Article_Images/ImageForArticle_24825_17151653074279867.jpg" 
                   alt="Aseptic Processing & Sterile Manufacturing" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
@@ -96,7 +96,7 @@ const Services = () => {
               </div>
               <div className="order-1 md:order-2">
                 <img 
-                  src="https://images.pexels.com/photos/8941765/pexels-photo-8941765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                  src="https://www.syntegon.com/hs-fs/hubfs/05_website/Content/1-Solutions/1-Pharma/1-Technology-pages/05-Process-Sterillization/process-sterilization-pharmaceutical.jpeg?width=1600&height=1600&name=process-sterilization-pharmaceutical.jpeg" 
                   alt="Sterilization & Decontamination Systems" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />

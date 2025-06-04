@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Blue Navbar */}
-      <header className="fixed top-10 left-0 right-0 z-40 bg-blue-700 shadow-md py-3">
+      <header className="fixed top-10 left-0 right-0 z-40 bg-blue-900 shadow-md py-6">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="text-white font-bold text-2xl">Neomech</Link>
