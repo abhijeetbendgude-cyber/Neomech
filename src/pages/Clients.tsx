@@ -1,21 +1,26 @@
 import React from 'react';
 import { Users, Star, ArrowRight } from 'lucide-react';
+import GodrejLogo from '/assets/Godrej-logo.png';
+import ShilpaLogo from '/assets/ShilpaBiological.jpeg';
+import BioGenTechLogo from '/assets/BioGenTechLogo.jpeg';
+import PharmaCorpLogo from '/assets/PharmaCorpLogo.png';
+ 
 
 const Clients = () => {
   // Sample client logos (using text placeholders for demo)
   const clients = [
-    { id: 1, name: "PharmaCorp" },
-    { id: 2, name: "BioGenTech" },
-    { id: 3, name: "MediSolutions" },
-    { id: 4, name: "VaccineTech" },
-    { id: 5, name: "HealthLabs" },
-    { id: 6, name: "Godrej Industries" },
-    { id: 7, name: "PharmaPro" },
-    { id: 8, name: "BioTech Systems" },
-    { id: 9, name: "MedicalManufacturing" },
-    { id: 10, name: "SterileScience" },
-    { id: 11, name: "GlobalPharma" },
-    { id: 12, name: "LifeSciences" }
+    { id: 1, name: "PharmaCorp", logo: PharmaCorpLogo },
+    { id: 2, name: "BioGenTech", logo: BioGenTechLogo },
+    { id: 3, name: "ShilpaBiological", logo: ShilpaLogo },
+    { id: 4, name: "VaccineTech" ,logo: GodrejLogo},
+    { id: 5, name: "HealthLabs" ,logo: GodrejLogo},
+    { id: 6, name: "Godrej Industries", logo: GodrejLogo },
+    { id: 7, name: "PharmaPro" ,logo: GodrejLogo},
+    { id: 8, name: "BioTech Systems" ,logo: GodrejLogo},
+    { id: 9, name: "MedicalManufacturing" ,logo: GodrejLogo},
+    { id: 10, name: "SterileScience" ,logo: GodrejLogo},
+    { id: 11, name: "GlobalPharma" ,logo: GodrejLogo},
+    { id: 12, name: "LifeSciences" ,logo: GodrejLogo},
   ];
   
   // Sample testimonials
@@ -83,9 +88,17 @@ const Clients = () => {
                 className="flex items-center justify-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 rounded-full mb-3">
-                    <Users className="w-8 h-8 text-blue-700" />
-                  </div>
+                  {client.logo ? (
+                    <img 
+                      src={client.logo} 
+                      alt={client.name} 
+                      className="w-24 h-24 object-contain mb-3"
+                    />
+                  ) : (
+                    <div className="inline-flex items-center justify-center w-24 h-24 bg-blue-50 rounded-full mb-3">
+                      <Users className="w-12 h-12 text-blue-700" />
+                    </div>
+                  )}
                   <p className="font-semibold text-gray-900">{client.name}</p>
                 </div>
               </div>

@@ -11,6 +11,11 @@ import {
   Cpu
 } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
+import { motion } from 'framer-motion';
+import GodrejLogo from '/assets/Godrej-logo.png';
+import ShilpaLogo from '/assets/ShilpaBiological.jpeg';
+import BioGenTechLogo from '/assets/BioGenTechLogo.jpeg';
+import PharmaCorpLogo from '/assets/PharmaCorpLogo.png';
 
 const Home = () => {
   return (
@@ -19,54 +24,51 @@ const Home = () => {
 
       {/* Workflow Section */}
       <section className="py-16 bg-gradient-to-r from-blue-200 to-blue-400">
-  <div className="container mx-auto px-4">
-    <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-      World Solutions Through Science, Engineering and Technology
-    </h2>
+        <div className="container mx-auto px-4">
+          <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+            World Solutions Through Science, Engineering and Technology
+          </h2>
 
-    <div className="flex flex-wrap justify-center items-center gap-8">
-      {[
-        {
-          label: 'R&D',
-          img: 'https://www.chemdistgroup.com/images/home/R&D-01.svg'
-        },
-        {
-          label: 'Design',
-          img: 'https://www.chemdistgroup.com/images/home/R&D-02.svg'
-        },
-        {
-          label: 'Engineering',
-          img: 'https://www.chemdistgroup.com/images/home/R&D-03.svg'
-        },
-        {
-          label: 'Supply',
-          img: 'https://www.chemdistgroup.com/images/home/R&D-04.svg'
-        },
-        {
-          label: 'Commissioning',
-          img: 'https://www.chemdistgroup.com/images/home/R&D-05.svg'
-        }
-      ].map((step, index, arr) => (
-        <div key={index} className="flex items-center">
-          <div className="flex flex-col items-center space-y-3 bg-white rounded-2xl shadow-md p-6 transition hover:scale-105 duration-300">
-            <img
-              src={step.img}
-              alt={step.label}
-              className="w-40 h-40 object-contain"
-              loading="lazy"
-            />
-            
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {[
+              {
+                label: 'R&D',
+                img: 'https://www.chemdistgroup.com/images/home/R&D-01.svg'
+              },
+              {
+                label: 'Design',
+                img: 'https://www.chemdistgroup.com/images/home/R&D-02.svg'
+              },
+              {
+                label: 'Engineering',
+                img: 'https://www.chemdistgroup.com/images/home/R&D-03.svg'
+              },
+              {
+                label: 'Supply',
+                img: 'https://www.chemdistgroup.com/images/home/R&D-04.svg'
+              },
+              {
+                label: 'Commissioning',
+                img: 'https://www.chemdistgroup.com/images/home/R&D-05.svg'
+              }
+            ].map((step, index, arr) => (
+              <div key={index} className="flex items-center">
+                <div className="flex flex-col items-center space-y-3 bg-white rounded-2xl shadow-md p-6 transition hover:scale-105 duration-300">
+                  <img
+                    src={step.img}
+                    alt={step.label}
+                    className="w-40 h-40 object-contain animate-zoomIn"
+                    loading="lazy"
+                  />
+                </div>
+                {index !== arr.length - 1 && (
+                  <div className="mx-4 text-blue-400 text-3xl font-bold">→</div>
+                )}
+              </div>
+            ))}
           </div>
-          {index !== arr.length - 1 && (
-            <div className="mx-4 text-blue-400 text-3xl font-bold">→</div>
-          )}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
+      </section>
 
       {/* About Section */}
       <section className="py-16 bg-white">
@@ -85,7 +87,7 @@ const Home = () => {
               <img
                 src="https://www.shutterstock.com/shutterstock/photos/2422913545/display_1500/stock-photo-advanced-bright-modern-pharmaceutical-factory-medical-ampoule-production-line-rows-of-glass-vials-2422913545.jpg"
                 alt="Pharmaceutical Manufacturing"
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                className="rounded-lg shadow-lg w-full h-auto object-cover animate-float"
               />
             </div>
             <div>
@@ -187,6 +189,65 @@ const Home = () => {
               View All Services
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Slider Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Trusted by Industry Leaders</h2>
+            <p className="text-lg text-gray-600">
+              We've partnered with a diverse range of companies across the pharmaceutical and 
+              biotechnology sectors to deliver exceptional process solutions.
+            </p>
+          </div>
+          
+         <div className="overflow-x-hidden">
+  <motion.div className="flex gap-8 min-w-full"
+              initial={{ x: 0 }}
+              animate={{ x: -1000 }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+            >
+              {[
+                { id: 1, name: "PharmaCorp", logo: PharmaCorpLogo },
+                { id: 2, name: "BioGenTech", logo: BioGenTechLogo },
+                { id: 3, name: "ShilpaBiological", logo: ShilpaLogo },
+                { id: 4, name: "VaccineTech", logo: GodrejLogo },
+                { id: 5, name: "HealthLabs", logo: GodrejLogo },
+                { id: 6, name: "Godrej Industries", logo: GodrejLogo },
+                { id: 7, name: "PharmaPro", logo: GodrejLogo },
+                { id: 8, name: "BioTech Systems", logo: GodrejLogo },
+                { id: 9, name: "MedicalManufacturing", logo: GodrejLogo },
+                { id: 10, name: "SterileScience", logo: GodrejLogo },
+                { id: 11, name: "GlobalPharma", logo: GodrejLogo },
+                { id: 12, name: "LifeSciences", logo: GodrejLogo },
+              ].map((client) => (
+                <div 
+                  key={client.id} 
+                  className="flex items-center justify-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-w-[200px]"
+                >
+                  <div className="text-center">
+                    {client.logo ? (
+                      <img 
+                        src={client.logo} 
+                        alt={client.name} 
+                        className="w-24 h-24 object-contain mx-auto"
+                      />
+                    ) : (
+                      <div className="inline-flex items-center justify-center w-24 h-24 bg-blue-50 rounded-full mx-auto">
+                        <Users className="w-12 h-12 text-blue-700" />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
