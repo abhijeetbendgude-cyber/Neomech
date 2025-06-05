@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { title } from 'framer-motion/client';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: "https://images.pexels.com/photos/8941674/pexels-photo-8941674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "assets/Home0.jpeg",
+      title:"Aseptic Processing & Sterile Manufacturing",
+      description:"Advanced vial, ampoule, and syringe filling systems, ensuring contamination-free production."
+
+    },
+    {
+      image: "assets/Home1.jpeg",
       title: "Turnkey Process Solutions for Pharmaceutical Industries",
       description: "Advanced sterile manufacturing technologies and equipment solutions that ensure precision, compliance, and efficiency."
     },
     {
-      image: "https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "assets/Home2.jpeg",
       title: "Cutting-Edge Aseptic Processing Equipment",
       description: "State-of-the-art vial, ampoule, and syringe filling systems ensuring contamination-free production."
     },
     {
-      image: "https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "assets/Home3.jpeg",
       title: "End-to-End Turnkey Solutions",
       description: "From conceptualization to commissioning, we provide complete project execution and support for pharmaceutical facilities."
     }
