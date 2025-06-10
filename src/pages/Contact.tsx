@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative py-24 bg-blue-700">
+      <section className="relative py-24 bg-gray-900/90">
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Link } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -95,7 +94,7 @@ const Projects = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative py-24 bg-blue-700">
+      <section className="relative py-24 bg-gray-900/90">
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -272,17 +271,18 @@ const Projects = () => {
             <p className="text-xl text-blue-100 mb-8">
               Contact us to discuss your project requirements and discover how our expertise can help you achieve your goals.
             </p>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 font-semibold rounded-md hover:bg-blue-50 transition-colors duration-300"
             >
               Start a Project
               <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
     </div>
+    
   );
 };
 

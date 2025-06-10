@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { title } from 'framer-motion/client';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,7 +9,7 @@ const HeroSection = () => {
     {
       image: "assets/Home0.jpeg",
       title:"Aseptic Processing & Sterile Manufacturing",
-      description:"Advanced vial, ampoule, and syringe filling systems, ensuring contamination-free production."
+      description:"Advanced vial, ampoule, and syringe filling systems, ensuring contamination-free production"
 
     },
     {

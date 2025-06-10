@@ -1,11 +1,14 @@
-import React from 'react';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import ProcessFlow from '../components/ProcessFlow';
+import ServicesDropdown from '../components/ServicesDropdown';
 
 const Services = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
+      <div className="container mx-auto px-4 mb-8">
+        <ServicesDropdown />
+      </div>
       <section className="relative py-24 bg-blue-700">
         <div className="absolute inset-0 overflow-hidden">
           <img
